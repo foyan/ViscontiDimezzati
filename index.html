@@ -26,13 +26,13 @@
 		
 			<div id="innerContent">
 			
-				<div id="home" class="content" data-bind="visible: selected() == home">
+				<div id="home" class="content" data-bind="fadeVisible: selected() == home">
 					
 				</div>
 				
-				<div id="uberuns" class="content" data-bind="visible: selected() == uberuns">
+				<div id="uberuns" class="content" data-bind="fadeVisible: selected() == uberuns">
 					<div class="logo"><img src="assets/iviscontidimezzati_logo.gif" /></div>
-					<div class="scrollable">
+					<div class="scrollable twocol">
 						<h1>Über uns</h1>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor mollis risus, ac posuere leo commodo in. Nam ornare tristique mauris. Sed tristique enim ut est egestas non imperdiet velit tincidunt. Nullam tincidunt erat non massa porta id feugiat lorem volutpat. Nulla vitae lorem turpis. Aenean a justo et justo condimentum viverra in nec massa. Nunc dictum nulla in ante congue mollis. Nam felis mi, aliquam vel hendrerit eget, faucibus sed felis.
@@ -43,14 +43,59 @@
 					</div>
 				</div>
 				
-				<div id="konzerte" class="content" data-bind="visible: selected() == konzerte">
-				
+				<div id="konzerte" class="content" data-bind="fadeVisible: selected() == konzerte">
+					<div style="height:200px">
+					</div>
+					<div class="scrollable twocol bgontop">
+						<h1>Konzerte</h1>
+						<table data-bind="foreach: gigs">
+							<tr>
+								<td data-bind="text: wann"/>
+								<td><a data-bind="text: wo, attr: {href: link}"></a></td>
+							</tr>
+						</table>
+					</div>
 				</div>
 			
+				<div id="rep" class="content" data-bind="fadeVisible: selected() == rep">
+					<div class="logo"><img src="assets/iviscontidimezzati_logo.gif" /></div>
+					<div class="scrollable twocol">
+						<h1>Repertoire</h1>
+						<table>
+							<tr><td>Miserere</td><td>Zucchero</td><td>(1992)</td></tr>
+							<tr><td>Caruso</td><td>Lucio Dalla</td><td>(1986)</td></tr>
+							<tr><td>Se telefonando</td><td>Ennio Morricone</td><td>(1966)</td></tr>
+							<tr><td>Il mondo</td><td>Jimmy Fontana</td><td>(1965)</td></tr>
+							<tr><td>Mi sono innamorato di te</td><td>Luigi Tenco</td><td>(1962)</td></tr>
+							<tr><td>Ciao, ciao bambina</td><td>Domenico Modugno</td><td>(1959)</td></tr>
+							<tr><td>Nel blu, dipinto di blu</td><td>Domenico Modugno</td><td>(1958)</td></tr>
+							<tr><td>Arrivederci roma</td><td>Renato Rascel</td><td>(1957)</td></tr>
+							<tr><td>Mamma</td><td>Cesare Andrea Bixio</td><td>(1940)</td></tr>
+							<tr><td>Parlami d'amore Mariù</td><td>Cesare Andrea Bixio</td><td>(1932)</td></tr>
+							<tr><td>Torna a Surriento</td><td>Ernesto De Curtis</td><td>(1902)</td></tr>
+							<tr><td>O sole mio</td><td>Eduardo Di Capua</td><td>(1898)</td></tr>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div id="demo" class="content" data-bind="fadeVisible: selected() == demo">
+					<div style="height:200px">
+					</div>
+					<div class="scrollable twocol bgontop">
+						<h1>Demo</h1>
+						<table>
+							<tr><td>Se telefonando</td><td>Ennio Moricone (1966)</td><td><a href="demo/iviscontidimezzati_setelefonando.mp3">Download als MP3</a></td></tr>
+							<tr><td>Mi sono innamorato di te</td><td>Luigi Tenco (1962)</td><td><a href="demo/iviscontidimezzati_misonoinnamoratodite.mp3">Download als MP3</a></td></tr>
+							<tr><td>Torna a Surriento</td><td>Ernesto De Curtis (1902)</td><td><a href="demo/iviscontidimezzati_tornaasurriento.mp3">Download als MP3</a></td></tr>
+						</table>
+					</div>
+				</div>
+
 			</div>
-		
-		</div>
 			
+		</div>
+					
 	</body>
 
-<html>
+</html>

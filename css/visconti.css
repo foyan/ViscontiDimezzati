@@ -128,3 +128,19 @@ a:hover {
 .content .bgontop {
 	height: 250px;
 }
+
+#gallery {
+	float: right;
+	margin-right: 20px;
+	margin-top: 371px;
+}
+
+.galleryThumbs img {
+	border: 2px solid white;
+	border-radius: 4px;
+	opacity: 0.5;
+}
+
+.galleryThumbs img.hovered {
+	opacity: 1.0;
+}

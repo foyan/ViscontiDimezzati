@@ -25,6 +25,10 @@
 $(function () {
 	navigation.selected(navigation.home);
 	ko.applyBindings(navigation, $("#outerContent").get(0));
+	
+	$(".galleryThumbs").fancybox();
+	
+	$(".galleryThumbs img").hover(function () { $(this).addClass("hovered"); }, function () { $(this).removeClass("hovered"); });
 });
 
 ko.bindingHandlers.fadeVisible = {

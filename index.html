@@ -5,6 +5,13 @@
 		<title>I visconti dimezzati</title>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.1.0/knockout-min.js"></script>
+		
+		<script type="text/javascript" src="lib/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<link rel="stylesheet" href="lib/fancybox/source/jquery.fancybox.css?v=2.1.2" type="text/css" media="screen" />
+		<script type="text/javascript" src="lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.2"></script>
+		<link rel="stylesheet" href="lib/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="lib/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		
 		<script type="text/javascript" src="js/visconti.js"></script>
 		
 		<link rel="stylesheet" type="text/css" href="css/visconti.css" />
@@ -28,6 +35,13 @@
 			
 				<div id="home" class="content" data-bind="fadeVisible: selected() == home">
 					
+					<div id="gallery">
+						<a class="galleryThumbs" rel="gallery" href="assets/gallery/FOTOSESSION_2012 093_2.jpg"><img src="assets/gallery/thumbs/FOTOSESSION_2012 093_2.jpg" alt="" /></a>
+						<a class="galleryThumbs" rel="gallery" href="assets/gallery/FOTOSESSION_2012 102_2.jpg"><img src="assets/gallery/thumbs/FOTOSESSION_2012 102_2.jpg" alt="" /></a>					
+						<a class="galleryThumbs" rel="gallery" href="assets/gallery/FOTOSESSION_2012 053.jpg"><img src="assets/gallery/thumbs/FOTOSESSION_2012 053.jpg" alt="" /></a>
+						<a class="galleryThumbs" rel="gallery" href="assets/gallery/FOTOSESSION_2012 060_2.jpg"><img src="assets/gallery/thumbs/FOTOSESSION_2012 060_2.jpg" alt="" /></a>					
+					</div>
+					
 				</div>
 				
 				<div id="uberuns" class="content" data-bind="fadeVisible: selected() == uberuns">
@@ -48,11 +62,13 @@
 					</div>
 					<div class="scrollable twocol bgontop">
 						<h1>Konzerte</h1>
-						<table data-bind="foreach: gigs">
-							<tr>
-								<td data-bind="text: wann"/>
-								<td><a data-bind="text: wo, attr: {href: link}"></a></td>
-							</tr>
+						<table>
+							<tbody data-bind="foreach: gigs">
+								<tr>
+									<td data-bind="text: wann"/>
+									<td><a data-bind="text: wo, attr: {href: link}"></a></td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</div>
@@ -89,6 +105,8 @@
 							<tr><td>Mi sono innamorato di te</td><td>Luigi Tenco (1962)</td><td><a href="demo/iviscontidimezzati_misonoinnamoratodite.mp3">Download als MP3</a></td></tr>
 							<tr><td>Torna a Surriento</td><td>Ernesto De Curtis (1902)</td><td><a href="demo/iviscontidimezzati_tornaasurriento.mp3">Download als MP3</a></td></tr>
 						</table>
+						
+						<p>Alle Aufnahmen im Übungsraum gemacht mit Blut, Schweiss und Tränen.</p>
 					</div>
 				</div>
 

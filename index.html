@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+		<title>I visconti dimezzati</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.1.0/knockout-min.js"></script>
+		<script type="text/javascript" src="js/visconti.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/visconti.css" />
+		
+	</head>
+	
+	<body>
+			
+		<div id="outerContent">
+		
+			<ul id="nav">
+				<li><a href="#" data-bind="css: {selected: selected() == home }, click: function (t) { t.selected(t.home); }">Home</a></li>
+				<li><a href="#" data-bind="css: {selected: selected() == uberuns }, click: function (t) { t.selected(t.uberuns); }">Über uns</a></li>
+				<li><a href="#" data-bind="css: {selected: selected() == konzerte}, click: function (t) { t.selected(t.konzerte); }">Konzerte</a></li>
+				<li><a href="#" data-bind="css: {selected: selected() == rep}, click: function (t) { t.selected(t.rep); }">Repertoire</a></li>
+				<li><a href="#" data-bind="css: {selected: selected() == demo}, click: function (t) { t.selected(t.demo); }">Demo</a></li>
+				<li><a href="mailto:info@iviscontidimezzati.ch">Kontakt</a></li>
+			</ul>
+		
+			<div id="innerContent">
+			
+				<div id="home" class="content" data-bind="visible: selected() == home">
+					
+				</div>
+				
+				<div id="uberuns" class="content" data-bind="visible: selected() == uberuns">
+					<div class="logo"><img src="assets/iviscontidimezzati_logo.gif" /></div>
+					<div class="scrollable">
+						<h1>Über uns</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor mollis risus, ac posuere leo commodo in. Nam ornare tristique mauris. Sed tristique enim ut est egestas non imperdiet velit tincidunt. Nullam tincidunt erat non massa porta id feugiat lorem volutpat. Nulla vitae lorem turpis. Aenean a justo et justo condimentum viverra in nec massa. Nunc dictum nulla in ante congue mollis. Nam felis mi, aliquam vel hendrerit eget, faucibus sed felis.
+						</p>
+						<p>
+							Etiam id vestibulum arcu. Integer interdum tempor velit id congue. Donec dolor tortor, consequat sed consectetur ac, congue at nunc. Nullam nec ligula vel quam blandit interdum sit amet ut ante. Nullam posuere sapien ut sapien tempus porttitor. Fusce lacus risus, commodo tincidunt congue ut, vestibulum sit amet ligula. Aliquam non nisl urna. Cras scelerisque fermentum justo, convallis sagittis nulla pharetra eget. Nam aliquam porttitor arcu volutpat bibendum. Donec vitae odio dui. Phasellus laoreet velit vel ligula dignissim vel ullamcorper dolor aliquet. Donec vitae urna in diam auctor adipiscing. Suspendisse pretium auctor lectus ut interdum. Aliquam venenatis nisi ut leo vulputate pellentesque. Proin eu diam lacus, vitae vestibulum sapien. Proin sit amet velit libero. 
+						</p>
+					</div>
+				</div>
+				
+				<div id="konzerte" class="content" data-bind="visible: selected() == konzerte">
+				
+				</div>
+			
+			</div>
+		
+		</div>
+			
+	</body>
+
+<html>

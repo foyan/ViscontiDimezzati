@@ -1,0 +1,77 @@
+body {
+	background-color: #4C443C;
+}
+
+#outerContent {
+	width: 886px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#innerContent {
+	height: 471px;
+	border: 1px solid #EEE4C0;
+	border-radius: 10px;
+}
+
+#nav {
+	margin-left: 0;
+	padding-left: 0;
+	color: #EEE5BC;
+}
+
+#nav a {
+	color: #EEE5BC;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	text-decoration: underline;
+}
+
+#nav a.selected {
+	color: #D6733D;
+}
+
+#nav li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li:before {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0;
+}
+
+#nav li + li:before {
+	content: '\2013';
+}
+
+.content {
+	width: 884px;
+	height: 471px;
+	border-radius: 10px;
+}
+
+.content .logo {
+	text-align: right;
+	padding-right: 25px;
+}
+
+#home {
+	background-image: url('../assets/bg_home.jpg');
+}
+
+#uberuns {
+	background-image: url('../assets/bg_uberuns.jpg');
+	background-repeat: no-repeat;
+	background-color: white;
+}
+
+.content .scrollable {
+	overflow: auto;
+	margin-left: 300px;
+	height: 350px;
+}

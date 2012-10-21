@@ -2,6 +2,7 @@ body {
 	background-color: #4C443C;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 11pt;
+	color: #4C443C;
 }
 
 a {
@@ -34,10 +35,12 @@ a:hover {
 }
 
 #nav {
-	margin-left: 0;
+	margin-left: 10px;
 	padding-left: 0;
 	color: #EEE5BC;
 	font-size: 14pt;
+	margin-top: 33px;
+	margin-bottom: 3px;
 }
 
 #nav a {

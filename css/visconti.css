@@ -49,7 +49,8 @@ a:hover {
 }
 
 #nav a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	color: #D6733D;
 }
 
 #nav a.selected {
